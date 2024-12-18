@@ -6,10 +6,10 @@ import { CreateBleDataDto } from './dto/ble.dto';
 export class BleController {
   constructor(private readonly bleService: BleService) {}
 
-  @Post('data')
-  async createBleData(@Body() createBleDataDto: CreateBleDataDto) {
-    return this.bleService.createBleData(createBleDataDto);
-  }
+  // @Post('data')
+  // async createBleData(@Body() createBleDataDto: CreateBleDataDto) {
+  //   return this.bleService.createBleData(createBleDataDto);
+  // }
 
   @Post('log')
   async responseLogger(@Body() logs: any) {

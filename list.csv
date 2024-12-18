@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+76d99743989e   amir20/dozzle:latest   "/dozzle --filter na…"   18 minutes ago   Up 18 minutes   0.0.0.0:8005->8080/tcp, [::]:8005->8080/tcp   Dozzle
+8028080ec29f   backend_app            "docker-entrypoint.s…"   23 minutes ago   Up 23 minutes   0.0.0.0:8002->8000/tcp, [::]:8002->8000/tcp   Process_logs
+db307d22aa3a   backend_app            "docker-entrypoint.s…"   24 minutes ago   Up 24 minutes   0.0.0.0:8001->8000/tcp, [::]:8001->8000/tcp   Counter_logs
+4c312885b79b   backend_app            "docker-entrypoint.s…"   25 minutes ago   Up 25 minutes   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp     Chorus_API_logs
